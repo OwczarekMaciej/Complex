@@ -1,5 +1,6 @@
 #include "Complex.h"
 #include <iostream>
+#include <math.h>
 
 Complex::Complex(double real_part_val, double img_part_val)
     :real_part(real_part_val), img_part(img_part_val){
