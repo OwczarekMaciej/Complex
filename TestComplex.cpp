@@ -5,7 +5,7 @@
 using namespace std;
 
 // testing creating complex numbers and getting their phase and amplitude
-void test1()
+void create_phase_amp()
 {
     cout << "=============" << endl;
     Complex test1(0, 2);
@@ -20,7 +20,7 @@ void test1()
 }
 
 // bool comparison
-void test2()
+void bool_comp()
 {
     cout << "=============" << endl;
     Complex test3(4);
@@ -30,7 +30,7 @@ void test2()
 }
 
 // add and substract
-void test3()
+void add_sub()
 {
     cout << "++++++++++++++" << endl;
     Complex test1(5, 4);
@@ -50,7 +50,7 @@ void test3()
 }
 
 // multiply and divide
-void test4()
+void mult_div()
 {
     cout << "*************" << endl;
     Complex test1(6, 7);
@@ -74,7 +74,7 @@ void test4()
 }
 
 // check += -= *= /=
-void test5()
+void operation_equal()
 {
     cout << "????????????" << endl;
     Complex g(3, 3), h(4, 4), i(5, 5);
@@ -85,11 +85,11 @@ void test5()
 }
 int main()
 {
-    test1();
-    test2();
-    test3();
-    test4();
-    test5();
+    create_phase_amp();
+    bool_comp();
+    add_sub();
+    mult_div();
+    operation_equal();
 
     return 0;
 }

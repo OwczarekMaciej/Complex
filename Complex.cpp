@@ -6,9 +6,6 @@ Complex::Complex(double real_part_val, double img_part_val)
     :real_part(real_part_val), img_part(img_part_val){
 }
 
-Complex::~Complex(){
-}
-
 double Complex::get_real() const
 {
     return real_part;
@@ -35,14 +32,14 @@ std::ostream &operator<<(std::ostream &os, const Complex &rhs)
     return os;
 }
 
-bool Complex::operator==(const Complex &rhs) const
+bool operator==(const Complex &lhs, const Complex &rhs)
 {
-    return (real_part == rhs.real_part && img_part == rhs.img_part);
+    return (lhs.real_part == rhs.real_part && lhs.img_part == rhs.img_part);
 }
 
-bool Complex::operator!=(const Complex &rhs) const
+bool operator!=(const Complex &lhs, const Complex &rhs)
 {
-    return !(real_part == rhs.real_part && img_part == rhs.img_part);
+    return !(lhs.real_part == rhs.real_part && lhs.img_part == rhs.img_part);
 }
 
 Complex operator+(const Complex &lhs, const Complex &rhs)

@@ -12,12 +12,11 @@ class Complex
     friend Complex operator*(const Complex &lhs, const Complex &rhs);
     friend Complex operator/(const Complex &lhs, const Complex &rhs);
 
+    friend bool operator==(const Complex &lhs, const Complex &rhs);
+    friend bool operator!=(const Complex &lhs, const Complex &rhs);
+
 public:
     Complex(double real_part_val = 0, double img_part_val = 0);
-    ~Complex();
-
-    bool operator==(const Complex &rhs) const;
-    bool operator!=(const Complex &rhs) const;
     
     Complex &operator+=(const Complex &rhs);
     Complex &operator-=(const Complex &rhs);
